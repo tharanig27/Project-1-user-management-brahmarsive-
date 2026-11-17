@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainer Dashboard | SkillTrack</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="app-shell">
+        <div class="sidebar">
+            <div class="brand">
+                Skill<span>Track</span>
+            </div>
+            <div class="side-label">
+                Trainer Area
+            </div>
+            <nav class="nav-links">
+                <h3>Dashboard</h3>
+                <h3>Students</h3>
+                <h3>Assignments</h3>
+                <h3>Submissions</h3>
+                <h3>Requests</h3>
+                <h3>Reports</h3>
+            </nav>
+            <div class="sidebar-note">
+                Every great developer starts with a great mentor.
+            </div>
+        </div>
+
+        <main class="main-area">
+            <header class="topbar">
+                <div>
+                    <strong>Trainer Dashboard</strong>
+                    <br>
+                    <small>Manage your coding journey with SkillTrack.</small>
+                </div>
+                <div class="user-chip">
+                    <div class="avatar">TR</div>
+                    <span>Trainer</span>
+                </div>
+            </header>
+
+            <section class="content">
+                <div class="page-heading">
+                    <div>
+                        <h1>Welcome back, Trainer!</h1>
+                        <p class="subtitle">
+                            Here is what's happening with your students this week.
+                        </p>
+                    </div>
+                    <button>+ Create assignment</button>
+                </div>
+                <div class="stats-grid">
+                    <article class="stat-card">
+                        <p><b>Total students</b></p>
+                        <div class="stat-value">48</div>
+                        <div class="stat-foot">Total 3 batches</div>
+                    </article>
+                    <article class="stat-card">
+                        <p><b>Completed assignments</b></p>
+                        <div class="stat-value">126</div>
+                        <div class="stat-foot">so far finished assignment</div>
+                    </article>
+                    <article class="stat-card">
+                        <p><b>Pending assignments</b></p>
+                        <div class="stat-value">32</div>
+                        <div class="stat-foot">Needs follow-up</div>
+                    </article>
+                    <article class="stat-card">
+                        <p><b>At-risk students</b></p>
+                        <div class="stat-value">05</div>
+                        <div class="stat-foot" style="color: var(--orange);">
+                            Check lifeline status
+                        </div>
+                    </article>
+                </div>
+                <div class="content-grid">
+                    <section class="panel">
+                        <div class="panel-header">
+                            <h2>Recent submissions</h2>
+                            <button>View all</button>
+                        </div>
+                        <div class="table-wrap">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Student</th>
+                                        <th>Challenge</th>
+                                        <th>Submitted</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Tharani G</td>
+                                        <td>Two Sum</td>
+                                        <td>Today, 10:30 AM</td>
+                                        <td>
+                                            <span class="status success">
+                                                Completed
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Swetha M</td>
+                                        <td>Valid Parentheses</td>
+                                        <td>Today, 09:15 AM</td>
+                                        <td>
+                                            <span class="status warning">
+                                                Review
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Priyanka M</td>
+                                        <td>Reverse String</td>
+                                        <td>Yesterday</td>
+                                        <td>
+                                            <span class="status info">
+                                                Submitted
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <section class="panel">
+                        <h2>Weekly completion</h2>
+                        <div class="progress-row">
+                            <span>Week 1</span>
+                            <strong>86%</strong>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 86%;"></div>
+                        </div>
+                        <div class="progress-row">
+                            <span>Week 2</span>
+                            <strong>72%</strong>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 72%;"></div>
+                        </div>
+                        <div class="progress-row">
+                            <span>Week 3</span>
+                            <strong>64%</strong>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 64%;"></div>
+                        </div>
+                    </section>
+                </div>
+                <section class="panel">
+                    <div class="panel-header">
+                        <h2>Recent activity</h2>
+                        <button>View students</button>
+                    </div>
+                    <div class="activity-item">
+                        <span class="activity-dot"></span>
+                        <div>
+                            <strong>Varshini M</strong>
+                            completed the Two Sum challenge
+                            <br>
+                            <span class="helper">
+                                Today · 10:30 AM
+                            </span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <span class="activity-dot"></span>
+                        <div>
+                            <strong>Vishnupriya V</strong>
+                            submitted a deadline extension request
+                            <br>
+                            <span class="helper">
+                                Today · 09:45 AM
+                            </span>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard | SkillTrack</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="app-shell">
+        <aside class="sidebar">
+            <div class="brand">Skill<span>Track</span></div>
+
+            <div class="side-label">Student workspace</div>
+
+            <nav class="nav-links">
+                <h3>Dashboard</h3>
+                <h3>Challenges</h3>
+                <h3>Code Submission</h3>
+                <h3>My Progress</h3>
+                <h3>Requests</h3>
+            </nav>
+
+            <div class="sidebar-note">
+                Stay consistent. Solve one challenge at a time.
+            </div>
+        </aside>
+
+        <main class="main-area">
+            <header class="topbar">
+                <div>
+                    <strong>Student Dashboard</strong>
+                    <br>
+                    <small>Manage your coding journey with CodeTrack.</small>
+                </div>
+
+                <div class="user-chip">
+                    <div class="avatar">ST</div>
+                    <span>Student</span>
+                </div>
+            </header>
+
+            <section class="content">
+                <div class="page-heading">
+                    <div>
+                        <h1>Welcome back, Student!</h1>
+                        <p class="subtitle">
+                            Keep learning and make progress one challenge at a time.
+                        </p>
+                    </div>
+                    <a class="button" href="challenges.html">
+                        View challenges
+                    </a>
+                </div>
+                <div class="stats-grid">
+                    <article class="stat-card">
+                        <p><b>Total challenges</b></p>
+                        <div class="stat-value">12</div>
+                        <div class="stat-foot">Assigned to you</div>
+                    </article>
+                    <article class="stat-card">
+                        <p><b>Completed</b></p>
+                        <div class="stat-value">08</div>
+                        <div class="stat-foot">Great progress</div>
+                    </article>
+                    <article class="stat-card">
+                        <p><b>Current streak</b></p>
+                        <div class="stat-value">30 days</div>
+                        <div class="stat-foot">Keep it going</div>
+                    </article>
+                    <article class="stat-card">
+                        <p><b>Leaderboard rank</b></p>
+                        <div class="stat-value">06</div>
+                        <div class="stat-foot">This batch</div>
+                    </article>
+                </div>
+                <div class="content-grid">
+                    <section class="panel">
+                        <div class="panel-header">
+                            <h2>Next challenge</h2>
+                            <span class="status warning">Due tomorrow</span>
+                        </div>
+                        <h3>Valid Parentheses</h3>
+                        <p class="subtitle">
+                            Topic: Stack · Difficulty: Easy
+                        </p>
+                        <p>
+                            Given a string containing brackets, determine
+                            whether the input string is valid.
+                        </p>
+                        <a class="button" href="challenges.html">
+                            Open challenge
+                        </a>
+                    </section>
+                    <section class="panel">
+                        <h2>Your lifelines</h2>
+                        <div class="stat-value">2 / 3</div>
+                        <p class="subtitle">Remaining lifelines</p>
+                        <div class="lifelines">
+                            <span class="life"></span>
+                            <span class="life"></span>
+                            <span class="life used"></span>
+                        </div>
+                        <p class="helper">
+                            A lifeline is deducted for an unexcused missed deadline.
+                        </p>
+                    </section>
+
+                </div>
+
+                <!-- Overall Progress -->
+                <section class="panel">
+                    <h2>Overall progress</h2>
+
+                    <div class="progress-row">
+                        <span>Challenge completion</span>
+                        <strong>67%</strong>
+                    </div>
+
+                    <div class="progress-track">
+                        <div class="progress-fill" style="width: 67%"></div>
+                    </div>
+                </section>
+                <section class="panel">
+                    <h2>Upcoming deadlines</h2>
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Challenge</th>
+                                    <th>Topic</th>
+                                    <th>Deadline</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Valid Parentheses</td>
+                                    <td>Stack</td>
+                                    <td>Tomorrow</td>
+                                    <td>
+                                        <span class="status warning">Pending</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Merge Sorted Array</td>
+                                    <td>Arrays</td>
+                                    <td>Friday</td>
+                                    <td>
+                                        <span class="status info">Not started</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
