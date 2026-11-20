@@ -1,0 +1,141 @@
+
+/* Dashboard Statistics */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 17px;
+    margin-bottom: 24px;
+}
+
+.stat-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 20px;
+}
+
+.stat-card p {
+    color: var(--muted);
+    margin: 0 0 9px;
+    font-size: 13px;
+}
+
+.stat-value {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.stat-foot {
+    color: var(--green);
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+/* Dashboard Panels */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 20px;
+}
+
+/* Tables */
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 620px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 13px 12px;
+    border-bottom: 1px solid var(--line);
+    font-size: 13px;
+}
+
+th {
+    color: var(--muted);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+}
+
+td {
+    color: #41445a;
+}
+
+/* Submission Status */
+.status {
+    display: inline-block;
+    border-radius: 20px;
+    padding: 4px 9px;
+    font-size: 11px;
+    font-weight: 700;
+    background: #f0f1f6;
+    color: #666a7e;
+}
+
+.status.success {
+    color: #087b59;
+    background: #e4f7f0;
+}
+
+.status.warning {
+    color: #a9670d;
+    background: #fff3df;
+}
+
+.status.danger {
+    color: #b93645;
+    background: #ffeaed;
+}
+
+.status.info {
+    color: #4b4cc4;
+    background: #eeeeff;
+}
+
+/* Weekly Progress */
+.progress-track {
+    height: 9px;
+    background: #eeeeF5;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--primary);
+    border-radius: inherit;
+}
+
+.progress-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin: 12px 0 7px;
+}
+
+/* Lifelines */
+.lifelines {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.life {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #e5f7f0;
+    border: 2px solid var(--green);
+}
+
+.life.used {
+    background: #fff;
+    border-color: #d9dbe5;
+}

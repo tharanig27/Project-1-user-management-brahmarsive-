@@ -1,0 +1,647 @@
+
+/* ==============================
+   GENERAL STYLES
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f6f7fb;
+    color: #202238;
+}
+
+.app-shell {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* ==============================
+   SIDEBAR
+============================== */
+
+.sidebar {
+    width: 245px;
+    background: var(--sidebar);
+    color: #fff;
+    padding: 25px 17px;
+}
+
+.brand {
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: -.7px;
+    padding: 0 12px 30px;
+}
+
+.brand span {
+    color: #59d0de;
+}
+
+.side-label {
+    color: #9c9db5;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding: 12px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #c4c5d8;
+    padding: 13px;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background: #44456c;
+    color: white;
+}
+
+
+/* ==============================
+   MAIN AREA
+============================== */
+
+.main-area {
+    flex: 1;
+    min-width: 0;
+}
+
+.topbar {
+    height: 75px;
+    background: white;
+    border-bottom: 1px solid #e8e9f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
+}
+
+.topbar span {
+    color: #74778b;
+    font-size: 13px;
+}
+
+.user-chip {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.avatar {
+    width: 36px;
+    height: 36px;
+    background: #e9e9ff;
+    color: #5b5ce2;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+}
+
+
+/* ==============================
+   CONTENT
+============================== */
+
+.content {
+    max-width: 1100px;
+    margin: auto;
+    padding: 35px;
+}
+
+.page-heading {
+    margin-bottom: 25px;
+}
+
+.page-heading h1 {
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+.page-heading p {
+    color: #74778b;
+    font-size: 14px;
+}
+
+
+/* ==============================
+   FORM CARDS
+============================== */
+
+.assignment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.form-card {
+    background: white;
+    border: 1px solid #e8e9f1;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.section-header {
+    margin-bottom: 25px;
+}
+
+.section-header h2 {
+    font-size: 19px;
+    margin-bottom: 7px;
+}
+
+.section-header p {
+    color: #74778b;
+    font-size: 14px;
+}
+
+
+/* ==============================
+   FORM ELEMENTS
+============================== */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 13px;
+    border: 1px solid #dedfeb;
+    border-radius: 7px;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    background: white;
+    color: #202238;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #5b5ce2;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+/* ==============================
+   ASSIGNMENT TYPE OPTIONS
+============================== */
+
+.assignment-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 28px;
+}
+
+.option-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    border: 1px solid #dedfeb;
+    padding: 18px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.option-card input {
+    width: auto;
+    margin-top: 4px;
+    accent-color: #5b5ce2;
+    flex-shrink: 0;
+}
+
+.option-card:hover {
+    border-color: #5b5ce2;
+}
+
+.option-card.selected {
+    border-color: #5b5ce2;
+    background: #f5f5ff;
+}
+
+.option-content {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.option-icon {
+    width: 42px;
+    height: 42px;
+    background: #eeeeff;
+    color: #5b5ce2;
+    border-radius: 9px;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.option-content h3 {
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.option-content p {
+    font-size: 13px;
+    color: #74778b;
+    line-height: 1.5;
+}
+
+
+/* ==============================
+   INDIVIDUAL STUDENT SECTION
+============================== */
+
+.individual-section {
+    width: 100%;
+}
+
+.selection-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.selection-heading h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.selection-heading p {
+    color: #74778b;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* Student Count */
+
+.student-count {
+    background: #efefff;
+    color: #5b5ce2;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+/* Student Search and Filter */
+
+.student-filters {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.student-filters .form-group {
+    margin-bottom: 18px;
+}
+
+
+/* Student List Container */
+
+.student-list-container {
+    border: 1px solid #e8e9f1;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.student-list-header {
+    padding: 14px 18px;
+    background: #f8f8fc;
+    border-bottom: 1px solid #e8e9f1;
+}
+
+.student-list-header label {
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.student-list-header input,
+.student-item input {
+    width: auto;
+    accent-color: #5b5ce2;
+    cursor: pointer;
+}
+
+
+/* Student Items */
+
+.student-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 15px 18px;
+    border-bottom: 1px solid #eeeeF3;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.student-item:last-child {
+    border-bottom: none;
+}
+
+.student-item:hover {
+    background: #fafaff;
+}
+
+.student-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #eeeeff;
+    color: #5b5ce2;
+    display: grid;
+    place-items: center;
+    font-size: 13px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.student-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.student-info strong {
+    font-size: 14px;
+}
+
+.student-info small {
+    font-size: 12px;
+    color: #74778b;
+}
+
+.empty-message {
+    padding: 25px;
+    text-align: center;
+    color: #74778b;
+    font-size: 13px;
+}
+
+
+/* ==============================
+   ENTIRE BATCH SECTION
+============================== */
+
+.batch-section {
+    width: 100%;
+}
+
+.batch-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+
+/* Batch Cards */
+
+.batch-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 20px;
+    border: 1px solid #e8e9f1;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.batch-card:hover {
+    border-color: #5b5ce2;
+    background: #fafaff;
+}
+
+.batch-card input {
+    width: auto;
+    margin-top: 4px;
+    accent-color: #5b5ce2;
+    flex-shrink: 0;
+}
+
+.batch-card:has(input:checked) {
+    border: 2px solid #5b5ce2;
+    background: #f5f5ff;
+    padding: 19px;
+}
+
+.batch-card-content h3 {
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.batch-card-content p {
+    font-size: 13px;
+    color: #74778b;
+    margin-bottom: 12px;
+}
+
+.batch-card-content span {
+    font-size: 12px;
+    color: #5b5ce2;
+    font-weight: bold;
+}
+
+
+/* Batch Information */
+
+.batch-info {
+    margin-top: 18px;
+    padding: 18px;
+    background: #f5f5ff;
+    border: 1px solid #e3e3ff;
+    border-radius: 8px;
+    color: #4546c8;
+    font-size: 14px;
+}
+
+
+/* ==============================
+   ASSIGNMENT SUMMARY
+============================== */
+
+.summary-content {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.summary-content div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.summary-content span {
+    font-size: 13px;
+    color: #74778b;
+}
+
+.summary-content strong {
+    font-size: 17px;
+}
+
+
+/* ==============================
+   FORM ACTIONS
+============================== */
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 5px;
+}
+
+button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #5b5ce2;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #4546c8;
+}
+
+.btn-secondary {
+    background: white;
+    color: #45465a;
+    border: 1px solid #dedfeb;
+}
+
+
+/* ==============================
+   SUCCESS MESSAGE
+============================== */
+
+.success-message {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e8f8f1;
+    border: 1px solid #b8ead5;
+    border-radius: 8px;
+    color: #137c58;
+    font-size: 14px;
+}
+
+
+/* ==============================
+   HIDDEN SECTION
+============================== */
+
+.hidden {
+    display: none !important;
+}
+
+
+/* ==============================
+   RESPONSIVE DESIGN
+============================== */
+
+@media (max-width: 768px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .topbar {
+        padding: 0 20px;
+    }
+
+    .assignment-options,
+    .form-row,
+    .student-filters,
+    .batch-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .summary-content {
+        gap: 25px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .form-card {
+        padding: 17px;
+    }
+
+    .page-heading h1 {
+        font-size: 22px;
+    }
+
+    .selection-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .form-actions {
+        flex-direction: column-reverse;
+    }
+
+    .form-actions button {
+        width: 100%;
+    }
+
+}
